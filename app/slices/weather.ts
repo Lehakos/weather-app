@@ -1,5 +1,5 @@
-import { createSlice, createSelector, createAsyncThunk } from '@reduxjs/toolkit'
-import { getWeatherData, GetWeatherDataPayload } from 'api/weather'
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
+import { getWeatherData, GetWeatherDataPayload } from 'client-api/weather'
 import { generateWeatherData } from 'lib/weather'
 import { DataStatus, WeatherData } from 'types/global'
 

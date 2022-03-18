@@ -3,7 +3,7 @@ import axios from 'axios'
 import { GetWeatherDataResponse } from 'types/api'
 import { transformWeatherDataFromAPI } from 'lib/weather'
 
-const handler: NextApiHandler = async function (req, res) {
+const handler: NextApiHandler = async (req, res) => {
   if (req.method !== 'GET') {
     res.status(404).send('')
     return
